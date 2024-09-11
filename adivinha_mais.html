@@ -1,0 +1,36 @@
+<h1></h1>
+<input/>
+
+<button>Obter Resposta</button>
+
+
+<script>
+
+    var segredo = [5, 7, 10, 2];
+    var input = document.querySelector("input");
+    input.focus();
+    
+        
+    function verifica(){
+
+        for(var posicao = 0; posicao <4; posicao++)
+
+        if(input.value == segredo [posicao]){
+            alert("Voce acertou!!!");
+
+        }
+
+        else{
+            alert("Voce errou !!!");
+        }
+        
+        input.value = "";
+        input.focus();
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+
+
+</script>
